@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    word-spacing: 1.5px;
+    letter-spacing: 1px;
+}
+
+:root {
+    --color-text-nav: rgb(255, 255, 255);
+    --color-text-navhover: black;
+    --background-color-nav: rgba(3, 3, 3, 0.897);
+    --background-color-hover: rgb(73, 163, 172);
+    --color-primari-w: white;
+    --color-primari-b: black;
+    --min-width-padrao: 250px;
+}
+
+body{
+    display: block;
+    background-image: url(../page-img/bg-web-developer.png);
+    background-size: contain;
+}
+
+header {
+    width: 100%;
+}
+
+.barra-nav {
+    min-width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    background-color: var(--background-color-nav);
+    color: var(--color-primari-w);
+}
+.div-logo {
+    width: 350px; min-width: 250px;
+    /* margin: auto; será utilizado quando a tela for abaixo de 700px */
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+#img-logo {
+    border-radius: 50px; margin: 3px 10px;
+    padding: 2px; background-color: rgb(29, 145, 48); 
+}
+#span-logo {
+    font-size: 1.2em;
+    text-shadow: 2px 2px 3px rgb(184, 37, 147);
+}
+
+/* barra de navegação*/
+.nav-option {
+    /* margin: auto; será utilizado quando a tela for abaixo de 700px */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-btn {
+    display: flex;
+    min-width: 125px;
+    margin: 1px 1px;
+    padding: 12px 16px;
+    border-radius: 50px 1px;
+    text-align: center;
+    color: var(--color-text-nav);
+}
+.dropdown-btn:hover {
+    background-color: var(--background-color-hover);
+    border-radius: 50px 1px;
+    font-size: 18px;
+    color: var(--color-primari-b);
+    transition: 1s;
+}
+
+.dropdown-content {
+    position: absolute;
+}
+.dropdown-content a {
+    display: block;
+    width: 135px;
+    padding: 10px 16px;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--color-primari-w);
+    background-color: var(--background-color-nav);
+    border: solid 1px rgb(46, 141, 153);
+    z-index: -1;
+   
+}
+.dropdown-content {
+    display: none;
+}
+
+.dropdown:hover .dropdown-content  {
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: var(--background-color-hover); font-size: 20px;
+    color: var(--color-primari-b);
+    text-align: center;
+    transition: 1s;
+}
+
+#icon-menu {
+    display: none;
+    font-size: 35px;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: rgb(35, 35, 36);
+}
+
+
+
+/* estilização da área de apresentação */
+.div-apresentacao {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 250px;
+    padding: 15px 0px 50px 0px;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--color-primari-b);
+}
+
+.animacao01 {
+    background-image: url(../page-img/gif/dif-astron-tec.gif);
+    background-size: cover;
+    width: 480px; min-width: 200px;
+    height: 480px; min-height: 200px;
+    margin-top: 10px; margin-bottom: 10px;
+    transition: 2s;
+    border-radius: 380px;
+}
+
+.div-text-01 {
+    display: inline-block;
+    width: 40%; min-width: 220px;
+    min-height: 250px;
+    padding: 40px;
+    color: white;
+    text-shadow: 1px 2px 1px black;
+    border:  solid 1px white;
+    border-radius: 50px;
+    box-shadow: -15px -8px 20px 5px rgb(0, 0, 0);
+    background-color: rgba(34, 84, 134, 0.63);
+    word-spacing: 3px;
+    letter-spacing: 1.5px;
+}
+
+#ola {
+    font-size: 25px;
+}
+
+#p-joao {
+    font-size: 4.3em;
+    font-weight: 600;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(3, 1, 1);
+    text-shadow: 2px 2px 1px rgb(240, 234, 234);
+    transition: 1s;
+}
+
+.btn-portif {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    margin-top: 8px;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+}
+
+.btn-portif a img {
+    margin: 0px 10px;
+    padding: 4px;
+    background-color: rgb(14, 35, 155);
+    border-radius: 35px;
+}
+
+/* inicio da estilização da section 01 "about me" */
+.about-me {
+    display: inline-block;
+    width: 100%; min-width: var(--min-width-padrao);
+    padding-bottom: 50px;
+    height: content;
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0.952);
+    border-top: 1px solid;
+}
+
+.h1-section {
+    border-radius: 50px;
+    width: 250px;
+    margin: auto; margin-top: -18px;
+    background-color: var(--background-color-hover);
+    box-shadow: 1px 1px 1px 1px rgb(31, 35, 36);
+}
+
+#h1-about {
+    font-style: italic;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 1px -2px 1px rgb(253, 249, 249);
+}
+
+.div-p-abt {
+    padding: px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.p-about-me {
+    width: 650px; 
+    padding: 40px 20px;
+    margin: 25px 20px;
+    font-size: 1em; 
+    border-radius: 50px;
+    box-shadow: 1px 2px 15px 2px rgb(4, 59, 141);
+}
+
+#img-abt01 {
+    margin: 35px 0px;
+    padding: 10px;
+}
+
+.qualificacao {
+    display: inline-block;
+    width: 100%;
+}
+#h1-qualif {
+    font-style: italic;
+    font-size: 1.8em;
+    text-align: center;
+    text-shadow: 1px -2px 1px rgb(253, 249, 249);
+    background-color: rgb(59, 179, 179);
+}
+
+/* aqui é o inicio da section qualificações*/
+.qualificacao {
+    min-width: var(--min-width-padrao);
+    display: inline-block;
+    width: 100%;
+    min-height: 600px;
+    border-top: 1px solid rgba(122, 114, 114, 0.863);
+    background-color: rgba(0, 0, 0, 0.856);
+    box-shadow: -5px 8px 100px 10px rgba(0, 0, 0, 0.774);
+    
+    
+}
+
+.div-qualificacao {
+    display: flex; flex-wrap: wrap;
+    min-width: var(--min-width-padrao);
+    margin: 10px;
+    padding: 20px 40px;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--color-primari-w);
+}
+
+.text-qualif {
+    width: 600px;
+    margin: 10px 20px;
+    padding: 20px; 
+}
+
+
+.h2-certif {
+    font-size: 2em;
+    padding: 20px;
+    text-align: center;
+    color: aqua;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: -1px 2px 1px rgb(0, 0, 0);
+}
+
+.p-certific{
+    word-spacing: 5px;
+    font-size: 18px;
+}
+
+.p-destaq {
+    font-size: 20px;
+    color: rgb(241, 10, 137);
+}
+#fs {
+    color: rgb(46, 105, 192);
+    font-size: 40px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.img-section {
+    width: 450px; min-width: 100px;
+    height: 360px;
+}
